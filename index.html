@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solar Website</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <a href="" class="logo">Solar Website</a>
+        <div class="nav">
+            <div class="nav-items">
+                <a href="">Home</a>
+                <a href="#solar-system">Solar System</a>
+                <a href="#agency">Space Agencies</a>
+                <!-- <a href="">About Us</a>
+                <a href="">Gallery</a> -->
+            </div>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="slide-container active">
+            <div class="slide">
+                <div class="content">
+                    <h1>Milky Way Galaxy</h1>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores et sequi necessitatibus nostrum laudantium modi repudiandae inventore vitae aliquam facere esse, distinctio deserunt officia earum pariatur neque dolorum. Obcaecati, repellendus.</p>
+                </div>
+                <video src="./assets/videos/galaxy.mp4" autoplay loop muted class="video"></video>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="slide-container">
+                <div class="slide">
+                    <div class="content">
+                        <h1>SUN</h1>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores et sequi necessitatibus nostrum laudantium modi repudiandae inventore vitae aliquam facere esse, distinctio deserunt officia earum pariatur neque dolorum. Obcaecati, repellendus.</p>
+                    </div>
+                    <video src="./assets/videos/sun.mp4" autoplay loop muted class="video"></video>
+                </div>
+            </div>
+
+            <div class="container">
+                <div class="slide-container">
+                    <div class="slide">
+                        <div class="content">
+                            <h1>MERCURY</h1>
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores et sequi necessitatibus nostrum laudantium modi repudiandae inventore vitae aliquam facere esse, distinctio deserunt officia earum pariatur neque dolorum. Obcaecati, repellendus.</p>
+                        </div>
+                        <video src="./assets/videos/mercury.mp4" autoplay loop muted class="video"></video>
+                    </div>
+                </div>
+
+
+                <div class="container">
+                    <div class="slide-container">
+                        <div class="slide">
+                            <div class="content">
+                                <h1>VENUS</h1>
+                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores et sequi necessitatibus nostrum laudantium modi repudiandae inventore vitae aliquam facere esse, distinctio deserunt officia earum pariatur neque dolorum. Obcaecati, repellendus.</p>
+                            </div>
+                            <video src="./assets/videos/venus.mp4" autoplay loop muted></video>
+                        </div>
+                    </div>
+
+                    <div class="container">
+                        <div class="slide-container">
+                            <div class="slide">
+                                <div class="content">
+                                    <h1>EARTH</h1>
+                                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores et sequi necessitatibus nostrum laudantium modi repudiandae inventore vitae aliquam facere esse, distinctio deserunt officia earum pariatur neque dolorum. Obcaecati, repellendus.</p>
+                                </div>
+                                <video src="./assets/videos/earth.mp4" autoplay loop muted></video>
+                            </div>
+                        </div>
+
+                    <div id="prev" onclick="prev()"><</div>
+                    <div id="next" onclick="next()">></div>
+    </div>
+
+
+    
+<video src="./assets/videos/galaxy1.mp4" loop autoplay muted class="myvideo" id="solar-system"></video>
+
+<!-- solar system -->
+
+<div class="sun-orbit">
+<div class="Sun"></div>
+</div>
+
+
+<div class="mercury-orbit">
+<div class="Mercury"></div>
+</div>
+
+
+<div class="venus-orbit">
+<div class="Venus"></div>
+</div>
+
+<div class="earth-orbit">
+<div class="Earth"></div>
+</div>
+
+<div class="mars-orbit">
+<div class="Mars"></div>
+</div>
+
+<div class="jupiter-orbit">
+<div class="Jupiter"></div>
+</div>
+
+<div class="saturn-orbit">
+<div class="Saturn">
+    <div class="ring"></div>
+</div>
+</div>
+
+<div class="uranus-orbit">
+<div class="Uranus"></div>
+</div>
+
+<div class="neptune-orbit">
+<div class="Neptune"></div>
+</div>
+
+
+
+<div class="wrapper" id="agency">
+        <div class="cont">
+            <div class="sun mydiv">
+                <h1>ISRO</h1>
+            </div>
+            <div class="mercury mydiv"><h1>NASA</h1>
+            </div>
+            <div class="venus mydiv"><h1>ENES</h1>
+              </div>
+            <div class="earth mydiv"><h1>ROSCOMOS</h1>
+        </div>
+            <div class="mars mydiv"><h1>JAXA</h1>
+</div>
+
+    <script src="script.js"></script>
+</body>
+</html>

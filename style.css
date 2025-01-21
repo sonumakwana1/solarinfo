@@ -1,0 +1,343 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif, "popins";
+}
+
+header{
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    z-index: 1;
+    
+}
+header a{
+    text-decoration: none;
+}
+.nav{
+    display: flex;
+    justify-items: end;
+}
+
+.logo {
+    margin: 10px;
+    font-size: 24px;
+    font-size: 1.5rem;
+    color: #fff;
+}
+.nav-items{
+    margin-left: 500px;
+    justify-content: end;
+    justify-items: end;
+}
+.nav-items a{
+  
+   padding: 20px;
+   color: #fff;
+   font-size: 1.2rem;
+   justify-content: end;
+}
+
+.container {
+    position: relative;
+}
+
+.container .slide-container .slide{
+    min-height: 100vh;
+    position: relative;
+    overflow: hidden;
+    z-index: -1;
+
+}
+.container .slide-container .slide video{
+
+    z-index: -1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    object-fit: fill;
+    width: calc(100%/1);
+    height: calc(100%/1);
+    animation: fade .4s linear;
+} 
+
+@keyframes fade{
+    0%{
+        transform: scale(1.5);
+    }
+}
+.container .slide-container .slide .content
+{
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column;
+    text-align: center;
+}
+
+.container .slide-container .slide .content h1{
+    font-size: 60px;
+    color: #fff;
+    text-shadow: 0 5px 10px black;
+}
+.container .slide-container .slide .content p{
+    font-size: 20px;
+    padding: 5px 0;
+    max-width: 700px;
+    color: #fff;
+    text-shadow: 0 5px 10px black;
+}
+
+.container .slide-container{
+    display: none;
+}
+
+.container .slide-container.active{
+    display: block;
+}
+
+
+.container #prev,
+.container #next
+{
+    position: absolute;
+    /* top: 10%; */
+    /* left: 0; */
+    transform: translateY(-110%);
+    z-index: 1;
+    /* background: #fff; */
+    color: #fff;
+    height: 60px;
+    width: 60px;
+    line-height: 55px;
+    font-size: 30px;
+    cursor: pointer;
+    text-align: center;
+} 
+
+.container #prev{
+    right: 50%;
+    top: 50%;
+}
+.container #next {
+    left: 50%;
+}
+
+
+
+
+
+
+
+
+
+/* .slider {
+    position: relative;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translateY(450px) translateX(350px);
+    margin: 5px;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+} */
+
+
+.slider .sbtn {
+    width: 8px;
+    height: 8px;
+    background: #fff;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+.slider .sbtn.active{
+background-color: blue;
+}
+
+.slider .sbtn:hover{
+    transform: scale(1.5);
+}
+.slider .sbtn:not(:last-child)
+{
+    margin: 20px;
+}
+
+
+
+
+
+
+.myvideo{
+    position: relative;
+    width: 100%;
+}
+
+.Sun{
+    width: 100px;
+    height: 100px;
+    background:#FF9D23;
+    box-shadow: (-4px 2px 56px orange);
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.Mercury-orbit {
+    height: 150px;
+    width: 150px;
+}
+
+.Mercury{
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    background:  #97979f;
+    position: absolute;
+    top: 44%;
+    left: 44%;
+    transform: translate(-50% , -50%);
+    animation: orbit1 5s linear infinite;
+}
+
+@keyframes orbit1 {
+    from{
+        transform: rotate(360deg) translateX(102px) rotate(-360deg);
+    }
+    to{
+        transform: rotate(0deg) translateX(102px) rotate(0deg);
+    }
+}
+
+.mercury-orbit,
+.venus-orbit,
+.earth-orbit,
+.mars-orbit,
+.jupiter-orbit,
+.saturn-orbits,
+.uranus-orbit,
+.neptune-orbit {
+     border: 1px dotted #fff;
+     position: absolute;
+     top: 50%;
+     left: 50%;
+     transform: translate(-50%,-50%);
+     border-radius: 50%;
+     background: transparent;
+}
+.mercury-orbit{
+    width: 210px;
+    height: 210px;
+}
+.venus-orbit{
+    width: 310px;
+    height: 310px;
+}
+.earth-orbit{
+    width: 410px;
+    height: 410px;
+}
+
+.Venus{
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    background: #504351 ;
+    position: absolute;
+    top: 43%;
+    left: 43%;
+    transform: translate(-50% , -50%);
+    animation: orbit2 5s linear infinite;
+}
+@keyframes orbit2 {
+    from{
+        transform: rotate(360deg) translateX(155px) rotate(-360deg);
+    }
+    to{
+        transform: rotate(0deg) translateX(155px) rotate(-360deg);
+    }
+}
+
+
+
+.cont{
+    display: flex;
+    flex: 1;
+    width: calc(100%/1);
+    gap: 0.5;
+    border-radius: 6px;
+    background: #000;
+    justify-content: center;
+    /* margin-left: 200px; */
+}
+.cont .mydiv{
+    width: auto;
+    height: 16rem;
+    flex-grow: 1;
+    transition: all 0.3s;
+    border-radius: 6px;
+    overflow: hidden;
+   
+    margin: 2px;
+    }
+ .wrpper .sun:before{
+        content: "";
+        color: yellow;
+    }
+.cont:after{
+    content: "";
+    color: #fff;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+
+
+
+
+.cont .sun
+{
+    background: url(./assets/images/isro.webp);
+    background-size: 100% 100%;
+    color: #fff;
+}
+.cont .sun .active{
+clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+}
+.cont .mercury
+{
+    background: url(./assets/images/nasa.webp);
+    background-size: 100% 100%;
+    color: #fff;
+}
+.cont .venus 
+{
+    background: url(./assets/images/cnes.webp);
+    background-size: 100% 100%;
+    color: #000;
+    
+  
+}
+
+
+.cont .earth
+{
+    background: url(./assets/images/roscomos.webp);
+    background-size: 100% 100%;
+    color: #000;
+}
+
+
+.cont .mars
+{
+    background: url(./assets/images/jaxa.webp);
+    background-size: 100% 100%;
+    color: #000                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     ;
+}
+
